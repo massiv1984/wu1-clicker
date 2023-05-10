@@ -37,23 +37,33 @@ let active = false; // exempel för att visa att du kan lägga till klass för a
 
 let achievements = [
     {
-        description: 'Museet är redo att öppna, grattis! ',
+        description: 'DITT SOPBILS ÄVENTYR ÄR PÅ GÅNG',
         requiredUpgrades: 1,
         acquired: false,
     },
     {
-        description: 'Nu börjar det likna något, fortsätt gräva!',
+        description: 'DIN SOPBIL BLIR KRAFTFULLARE',
         requiredUpgrades: 10,
         acquired: false,
     },
     {
-        description: 'Klickare, med licens att klicka!',
-        requiredClicks: 10,
+        description: 'GUD DARRAR NÄR HAN SER DIN SOPBIL',
+        requiredUpgrades: 100,
         acquired: false,
     },
     {
-        description: 'Tac-2 god!',
-        requiredClicks: 10000,
+        description: 'DU PLOCKADE UPP DIN FÖRSTA SOPA',
+        requiredClicks: 1,
+        acquired: false,
+    },
+    {
+        description: 'DU HAR PLOCKAT UPP MÅNGA SOPOR',
+        requiredClicks: 500,
+        acquired: false,
+    },
+    {
+        description: 'DU ÄR DEN ULTIMATA SOPSAMLAREN',
+        requiredClicks: 5000,
         acquired: false,
     },
 ];
