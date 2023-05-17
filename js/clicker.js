@@ -173,24 +173,44 @@ window.addEventListener('load', (event) => {
  */
 upgrades = [
     {
-        name: 'Sop',
+        name: 'SOP',
         cost: 10,
-        amount: 1,
+        clicks: 1,
     },
     {
-        name: 'Kvalitetsspade',
+        name: 'STOR ROOMBA',
+        cost: 10,
+        amount: 2,
+    },
+    {
+        name: 'GIGANTISK ROOMBA',
         cost: 50,
-        clicks: 2,
+        amount: 5,
     },
     {
-        name: 'Skottkärra',
-        cost: 100,
-        amount: 10,
+        name: 'STARKARE SOPBIL',
+        cost: 200,
+        clicks: 15,
     },
     {
-        name: 'Grävmaskin',
+        name: 'OFATTBART STOR ROOMBA',
         cost: 1000,
-        amount: 100,
+        amount: 150,
+    },
+    {
+        name: 'SVART HÅL',
+        cost: 50000,
+        amount: 10000,
+    },
+    {
+        name: 'SUPERSOP',
+        cost: 50000,
+        clicks: 2500
+    },
+    {
+        name: 'RÄDDA VÄRLDEN',
+        cost: 1000000,
+        clicks: '???',
     },
 ];
 
@@ -223,19 +243,19 @@ function createCard(upgrade) {
     } else {
         header.textContent = `${upgrade.name}, +${upgrade.clicks} per klick.`;
     }
-    cost.textContent = `Köp för ${upgrade.cost} benbitar.`;
+    cost.textContent = `KÖP FÖR ${upgrade.cost} SOPOR.`;
 
     card.addEventListener('click', (e) => {
         if (money >= upgrade.cost) {
             acquiredUpgrades++;
             money -= upgrade.cost;
             upgrade.cost *= 1.5;
-            cost.textContent = 'Köp för ' + upgrade.cost + ' benbitar';
+            cost.textContent = 'KÖP FÖR ' + upgrade.cost + ' SOPOR';
             moneyPerSecond += upgrade.amount ? upgrade.amount : 0;
             moneyPerClick += upgrade.clicks ? upgrade.clicks : 0;
-            message('Grattis du har köpt en uppgradering!', 'success');
+            message('JA', 'success');
         } else {
-            message('Du har inte råd.', 'warning');
+            message('NEJ', 'warning');
         }
     });
 
@@ -243,6 +263,7 @@ function createCard(upgrade) {
     card.appendChild(cost);
     return card;
 }
+
 
 /* Message visar hur vi kan skapa ett html element och ta bort det.
  * appendChild används för att lägga till och removeChild för att ta bort.
