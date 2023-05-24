@@ -16,6 +16,7 @@ const upgradeList = document.querySelector('#upgradelist');
 const msgbox = document.querySelector('#msgbox');
 const audioAchievement = document.querySelector('#swoosh');
 
+
 /* Följande variabler använder vi för att hålla reda på hur mycket pengar som
  * spelaren, har och tjänar.
  * last används för att hålla koll på tiden.
@@ -209,8 +210,8 @@ upgrades = [
     },
     {
         name: 'RÄDDA VÄRLDEN',
-        cost: 1000000,
-        clicks: '???',
+        cost: 2000000,
+        URL: 'end.html',
     },
 ];
 

@@ -200,13 +200,15 @@ audio {
     display: flex;
     justify-content: space-between;
     cursor: pointer;
-    border: 1px solid var(--color-dark-transparent);
+    border: 2px solid var(--color-dark-transparent);
     margin: var(--space-xs-s) 0;
     padding: var(--space-s-m) var(--space-xs-s);
+    background-color: darkolivegreen;
 }
 
 .card:hover {
     background-color: var(--color-lighter);
+    color: darkolivegreen;
 }
 
 .card p:not(.title) {
