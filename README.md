@@ -1,3 +1,11 @@
+    {
+        title: 'SOPBIL KLICKARE',
+        tagline: 'SAMLA SOPOR, VÄLDIGT ROLIGT',
+        url: 'https://massiv1984.github.io/wu1-clicker/',
+        git: 'https://github.com/massiv1984/wu1-clicker',
+        author: 'EMIL'
+    },
+
 # Clicker, webbprojekt
 
 Du har fått i uppdrag att designa och skapa ett clicker-spel från Kakmonstret AB.

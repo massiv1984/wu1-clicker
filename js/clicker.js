@@ -206,12 +206,7 @@ upgrades = [
     {
         name: 'SUPERSOP',
         cost: 50000,
-        clicks: 2500
-    },
-    {
-        name: 'RÄDDA VÄRLDEN',
-        cost: 2000000,
-        URL: 'end.html',
+        clicks: 2500,
     },
 ];
 
@@ -240,9 +235,9 @@ function createCard(upgrade) {
     header.classList.add('title');
     const cost = document.createElement('p');
     if (upgrade.amount) {
-        header.textContent = `${upgrade.name}, +${upgrade.amount} per sekund.`;
+        header.textContent = `${upgrade.name}, +${upgrade.amount} PER SEKUND`;
     } else {
-        header.textContent = `${upgrade.name}, +${upgrade.clicks} per klick.`;
+        header.textContent = `${upgrade.name}, +${upgrade.clicks} PER KLICK`;
     }
     cost.textContent = `KÖP FÖR ${upgrade.cost} SOPOR.`;
 
